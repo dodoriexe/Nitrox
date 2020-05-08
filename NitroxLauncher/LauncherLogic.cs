@@ -266,7 +266,7 @@ namespace NitroxLauncher
             }
             else if (PlatformDetection.IsSteam(subnauticaPath))
             {
-                startInfo.FileName = "steam://run/264710";
+                startInfo.Arguments = "-vrmode none";
             }
 
             return Process.Start(startInfo);
